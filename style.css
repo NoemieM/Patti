@@ -52,7 +52,7 @@ table {
 	text-decoration-color: #FFF;
 }
 
-.main-nav__item, .carousel__heading, .card-team__heading, .quote__autor, 
+.main-nav__item, .carousel__heading, .quote__autor, 
 .portfolio__heading, .portfolio__category, .facts__details, .services__icon,
 .blog__heading h2 a, .blog__date, .blog__btn, .form-btn__send{
 	text-transform: uppercase;
@@ -63,7 +63,7 @@ table {
 .form-btn__send{
 	font-weight: 700;
 }
-.studio__heading, .card-team__heading{
+.studio__heading{
 	font-weight: 800;
 }
 .hidden{
@@ -73,16 +73,16 @@ table {
 .form-btn__send, .blog__btn, .studio-skillbar__percent, .blog__date{
 	font-size: 0.75rem;
 }
-.main-nav__item a, .carousel__text-slider, .studio-skillbar__heading, .card-team__heading,
-.card-team__role, .portfolio__category, .services__icon, .twitter__date,
+.main-nav__item a, .carousel__text-slider, .studio-skillbar__heading,
+.portfolio__category, .services__icon, .twitter__date,
 .testimonials__name, .testimonials__profil, .footer__details{
 	font-size: 0.875rem;
 }
-.studio__details, .card-team__details, .quote__autor, .facts__details, 
+.studio__details, .quote__autor, .facts__details, 
 .blog__post p, .contact__adress, .nav-portfolio__item{
 	font-size: 1rem;
 }
-.contact__heading, .card-team__figure, .twitter__details, .testimonials__details,
+.contact__heading, .twitter__details, .testimonials__details,
 .blog__heading h2 a, .portfolio__heading{
 	font-size: 1.125rem;
 }
@@ -109,17 +109,17 @@ h1{
 
 h1, .carousel__text-slider, .carousel__text-slider-info, .studio-skillbar__percent,
 .quote, .portfolio__heading, .portfolio__category, .twitter__icon, .contact__map, .contact__heading,
-.form-btn__send, .footer-page__top, .card-team__icon-search{
+.form-btn__send, .footer-page__top{
 	color: #FFF;
 }
-.main-nav__item a, .studio__heading, .studio-skillbar__heading, .card-team__role, .facts__number,
+.main-nav__item a, .studio__heading, .studio-skillbar__heading, .facts__number,
 .services__icon, .blog__heading h2 a, .testimonials__profil, .nav-portfolio__item{
 	color: #323232;
 }
-h2, .card-team__figure, .card-team__heading{
+h2{
 	color: #444444;
 }
-.studio__details, .card-team__details, .card-team__social-icon, .facts__details,
+.studio__details, .facts__details,
 .blog__post p, .footer__icon i, .testimonials__details{
 	color: #686868;
 }
@@ -174,10 +174,7 @@ progress{
 	color: #FE7E17;
 	text-decoration-color: #FFF;
 }
-.card-team__social-icon:hover{
-	color: #FE7E17;
-}
-.card-team__social, .contact__map:hover{
+.contact__map:hover{
 	cursor: pointer;
 }
 .nav-portfolio__item:hover{
@@ -225,25 +222,18 @@ progress{
 
 /* Imgaes */
 
-.card-team__photo, .portfolio__image, .blog__image{
+.portfolio__image, .blog__image{
 	filter: grayscale(100%);
 }
-.card-team__photo:hover, .portfolio__image:hover, .blog__image:hover{
+.portfolio__image:hover, .blog__image:hover{
 	filter: grayscale(40%);
 	transform: scale(1.05);
 	transition: all 1s;
 }
 
-
-.card-team__icon-search{
-	border : 0.063rem #FFF solid;
-}
 .blog__icon i{
 	border : 0.063rem #FFF solid;
 	color: #FFF;
-}
-.banner{
-	display: inline-block;
 }
 
 
@@ -300,11 +290,13 @@ progress{
 	justify-content: space-around;
 	margin: 0 auto;
 }
+.facts__number{
+	text-align: center;
+}
 blockquote{
 	display: flex;
 	justify-content: center;
 }
-
 .blog__panel{
 	display: flex;
 	width: 80rem;
