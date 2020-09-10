@@ -1,0 +1,312 @@
+/* SOMMAIRE
+
+0. Reset CSS
+1. Font
+2. Colors
+3. Intéractions 
+4. Flexbox*/
+
+/* Reset CSS (méthode Eric Meyer’s) */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, 
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, 
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, 
+summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, 
+nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: ’’;
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Police*/
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	text-decoration-color: #FFF;
+}
+
+.main-nav__item, .carousel__heading, .card-team__heading, .quote__autor, 
+.portfolio__heading, .portfolio__category, .facts__details, .services__icon,
+.blog__heading h2 a, .blog__date, .blog__btn, .form-btn__send{
+	text-transform: uppercase;
+}
+.main-nav__item a, .carousel__heading, .carousel__text-slider, .studio-skillbar__heading,
+.quote__autor, .portfolio__category, .facts__number, .services__icon, 
+.blog__heading h2 a, .blog__btn, .testimonials__name, .testimonials__profil,
+.form-btn__send{
+	font-weight: 700;
+}
+.studio__heading, .card-team__heading{
+	font-weight: 800;
+}
+.hidden{
+    visibility: hidden;
+}
+
+.form-btn__send, .blog__btn, .studio-skillbar__percent, .blog__date{
+	font-size: 0.75rem;
+}
+.main-nav__item a, .carousel__text-slider, .studio-skillbar__heading, .card-team__heading,
+.card-team__role, .portfolio__category, .services__icon, .twitter__date,
+.testimonials__name, .testimonials__profil, .footer__details{
+	font-size: 0.875rem;
+}
+.studio__details, .card-team__details, .quote__autor, .facts__details, 
+.blog__post p, .contact__adress, .nav-portfolio__item{
+	font-size: 1rem;
+}
+.contact__heading, .card-team__figure, .twitter__details, .testimonials__details,
+.blog__heading h2 a, .portfolio__heading{
+	font-size: 1.125rem;
+}
+.carousel__text-slider-info, .contact__map{
+	font-size: 1.375rem;
+}
+h3{
+	font-size: 1.5rem;
+}
+.quote{
+	font-size: 1.875rem;
+}
+h2{
+	font-size: 2.25rem;
+}
+h1{
+	font-size: 3rem;
+}
+.services__icon i, .facts__number{
+	font-size: 3.5rem;
+}
+
+/* Couleurs */
+
+h1, .carousel__text-slider, .carousel__text-slider-info, .studio-skillbar__percent,
+.quote, .portfolio__heading, .portfolio__category, .twitter__icon, .contact__map, .contact__heading,
+.form-btn__send, .footer-page__top, .card-team__icon-search{
+	color: #FFF;
+}
+.main-nav__item a, .studio__heading, .studio-skillbar__heading, .card-team__role, .facts__number,
+.services__icon, .blog__heading h2 a, .testimonials__profil, .nav-portfolio__item{
+	color: #323232;
+}
+h2, .card-team__figure, .card-team__heading{
+	color: #444444;
+}
+.studio__details, .card-team__details, .card-team__social-icon, .facts__details,
+.blog__post p, .footer__icon i, .testimonials__details{
+	color: #686868;
+}
+.quote__autor, .twitter__date, .contact__adress{
+	color: #FAFAFA;
+}
+.blog__date{
+	color: #A3A2A2;
+}
+.blog__btn, .twitter__details a, .testimonials__details a, .testimonials__name, 
+.contact__link{
+	color: #FE7E17;
+}
+.twitter__details{
+	color: #EFEFEF;
+}
+.footer__details{
+	color: #868686;
+}
+.banner__background{
+	background-color: #FE7E17;
+}
+.footer-page__top, .contact__map{
+	background-color: #000;
+}
+.studio__background{
+	background-color: #FBFBFB;
+}
+.form-btn__send{
+	background-color: #444444;
+}
+.studio-skillbar__bar::-moz-progress-bar, .studio-skillbar__bar::-webkit-progress-bar{
+  	background-color: #FE7E17;
+}
+progress{
+	color: #EFEFEF;
+	border-color: #FFF;
+}
+
+
+/* Intéractions*/
+*{
+	scroll-behavior: smooth;
+}
+.main-nav__item a:hover{
+	text-decoration-color: #323232;
+}
+.main-nav__item a.current{
+	color: #FE7E17;
+}
+.main-nav__sub a:hover{
+	color: #FE7E17;
+	text-decoration-color: #FFF;
+}
+.card-team__social-icon:hover{
+	color: #FE7E17;
+}
+.card-team__social, .contact__map:hover{
+	cursor: pointer;
+}
+.nav-portfolio__item:hover{
+	border: 0.063rem #FE7E17 solid;
+}
+.services__icon:hover{
+	color: #FFF;
+	background-color: #FE7E17;
+}
+.blog__post a:hover{
+	color: #323232;
+}
+.twitter__details a:hover, .contact__link:hover{
+	color: #FFF;
+}
+.contact__map:hover{
+	color: #000;
+	background-color: #FFF;
+}
+.blog__heading h2 a:hover, .twitter__btn:hover, .twitter__icon:hover,
+.footer__icon i:hover, .footer-page__top:hover{
+	color: #FE7E17;
+}
+.form-btn__send:hover{
+	background-color: #222222;
+}
+
+/* Menu mobile first*/
+.main-nav__menu{
+	display: none;
+}
+.main-nav__menu-checkbox{
+	opacity: 0;
+	position: absolute;
+}
+.main-nav__menu-checkbox:checked ~ .main-nav__menu{
+	display: block;
+}
+@media screen and (min-width: 65rem){
+	.main-nav__menu-toggle{
+		opacity: 0;
+		display: none;
+	}
+}
+
+/* Imgaes */
+
+.card-team__photo, .portfolio__image, .blog__image{
+	filter: grayscale(100%);
+}
+.card-team__photo:hover, .portfolio__image:hover, .blog__image:hover{
+	filter: grayscale(40%);
+	transform: scale(1.05);
+	transition: all 1s;
+}
+
+
+.card-team__icon-search{
+	border : 0.063rem #FFF solid;
+}
+.blog__icon i{
+	border : 0.063rem #FFF solid;
+	color: #FFF;
+}
+.banner{
+	display: inline-block;
+}
+
+
+/* Flexbox*/
+
+.about__panel, .separator{
+	display: flex;
+	width: 80rem;
+	justify-content: space-around;
+	margin: 1rem auto;
+
+}
+.about-us__panel{
+	display: flex;
+	width: 80rem;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+.about-skillbar{
+	width: 110%;
+}
+
+.team-member__description{
+	margin: 1rem 1rem 1rem 0;
+}
+.team-member{
+	max-width: 100%;
+}
+.studio{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.team__panel{
+	display: flex;
+	width: 80rem;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+.team-member__name, .team-member__job, 
+.team-member__social, .team-member__description{
+	text-align: center;
+	margin: 1rem 3rem 1rem 3rem;
+}
+.facts__panel, .services__panel{
+	display: flex;
+	width: 80rem;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+blockquote{
+	display: flex;
+	justify-content: center;
+}
+
+.blog__panel{
+	display: flex;
+	width: 80rem;
+	margin: 0 auto;
+	padding: 10px;
+}
+.blog__image{
+	max-width: 100%;
+}
+.blog{
+	flex: 1;
+}
